@@ -1,0 +1,24 @@
+{
+  "name": "js-com-tdd-na-pratica",
+  "version": "1.0.0",
+  "description": "Biblioteca do curso JS com TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josemalcher/JS-com-TDD-na-Pratica.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "José Malcher Jr. <malcher.malch@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josemalcher/JS-com-TDD-na-Pratica/issues"
+  },
+  "homepage": "https://github.com/josemalcher/JS-com-TDD-na-Pratica#readme"
+}

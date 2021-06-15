@@ -22,6 +22,60 @@ Aprenda testes na prática e garanta um currículo melhor para o mercado de trab
 
 ## <a name="parte1">1 - Seção 1: Boas Práticas</a>
 
+1. Introdução
+
+- [https://github.com/willianjusten/js-tdd-course](https://github.com/willianjusten/js-tdd-course)
+- [https://travis-ci.org/https://github.com/](https://travis-ci.org/https://github.com/)
+- [https://github.com/](https://github.com/)
+- [https://nodejs.org/en/](https://nodejs.org/en/)
+- [https://git-scm.com/](https://git-scm.com/)
+- [https://www.npmjs.com/](https://www.npmjs.com/)
+
+2. Configurando o NPM e Criando o package.json
+
+- [https://docs.npmjs.com/cli/v7/using-npm/config](https://docs.npmjs.com/cli/v7/using-npm/config)
+- [https://docs.npmjs.com/](https://docs.npmjs.com/)
+- [https://www.npmjs.com/](https://www.npmjs.com/)
+
+```
+$ npm -v
+7.11.2
+
+$ npm set init-author-name "José Malcher Jr."
+
+$ npm set init-author-email "malcher.malch@gmail.com"
+
+$ npm set init-author-url "https://josemalcher.net"
+
+$ npm set init-license "MIT"
+
+$ npm adduser
+npm notice Log in on https://registry.npmjs.org/
+Username: josemalcher
+Password:
+Email: (this IS public) malcher.malch@gmail.com
+Logged in as josemalcher on https://registry.npmjs.org/.
+
+```
+
+3. Criando o gitignore de forma simples
+
+- [https://www.npmjs.com/package/gitignore](https://www.npmjs.com/package/gitignore)
+
+4. Criando arquivos para documentação
+
+5. Padrões de Código - Styleguides
+
+6. Instalando e Usando o Eslint
+
+7. UPDATE: Atualizando o Eslint para 4+
+
+8. Configurando o editorconfig
+
+9. Criando um Npm Script
+
+10. Configurando hooks no git
+
 
 
 [Voltar ao Índice](#indice)
