@@ -64,19 +64,42 @@ Logged in as josemalcher on https://registry.npmjs.org/.
 
 4. Criando arquivos para documentação
 
+- [https://github.com/matiassingers/awesome-readme](https://github.com/matiassingers/awesome-readme)
+- [https://github.com/lyef/lyef-react-component](https://github.com/lyef/lyef-react-component)
+- [https://opensource.org/licenses](https://opensource.org/licenses)
+
 5. Padrões de Código - Styleguides
 
+- [https://github.com/airbnb/javascript](https://github.com/airbnb/javascript)
+- [https://github.com/standard/standard](https://github.com/standard/standard)
+- [https://github.com/rwaldron/idiomatic.js/](https://github.com/rwaldron/idiomatic.js/)
+- [http://jscs.info/](http://jscs.info/)
+- [https://eslint.org/](https://eslint.org/)
+
+
 6. Instalando e Usando o Eslint
+
+- [https://willianjusten.com.br/analisando-seu-codigo-js-com-linter/](https://willianjusten.com.br/analisando-seu-codigo-js-com-linter/)
+- [https://www.jetbrains.com/help/phpstorm/eslint.html#ws_js_eslint_verify_code](https://www.jetbrains.com/help/phpstorm/eslint.html#ws_js_eslint_verify_code)
+- [https://blog.cod3r.com.br/organizacao-e-padronizacao-com-eslint/](https://blog.cod3r.com.br/organizacao-e-padronizacao-com-eslint/)
+
 
 7. UPDATE: Atualizando o Eslint para 4+
 
 8. Configurando o editorconfig
 
+- [https://editorconfig.org/](https://editorconfig.org/)
+- [https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [https://plugins.jetbrains.com/plugin/7294-editorconfig/](https://plugins.jetbrains.com/plugin/7294-editorconfig/)
+
 9. Criando um Npm Script
+
+- [https://css-tricks.com/why-npm-scripts/](https://css-tricks.com/why-npm-scripts/)
 
 10. Configurando hooks no git
 
-
+- [https://github.com/typicode/husky](https://github.com/typicode/husky)
+- [https://git-scm.com/book/it/v2/Customizing-Git-Git-Hooks](https://git-scm.com/book/it/v2/Customizing-Git-Git-Hooks)
 
 [Voltar ao Índice](#indice)
 
