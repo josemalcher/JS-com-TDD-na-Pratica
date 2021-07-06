@@ -117,6 +117,23 @@ Logged in as josemalcher on https://registry.npmjs.org/.
 - [https://github.com/willianjusten/es6-curso](https://github.com/willianjusten/es6-curso)
 
 12. 2.1 - Escopo do JS
+    
+```javascript
+var animal;
+
+function sayAnimal() {
+    animal = 'cat';
+    console.log(animal);
+}
+
+sayAnimal();
+
+console.log(animal);
+
+let sound = 'meow';
+const name = 'jake';
+
+```
 
 13. 2.2 - Variável let no JS
 
