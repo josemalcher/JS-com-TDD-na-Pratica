@@ -155,6 +155,22 @@ const name = 'jake';
 
 14. 2.3 - Variável const no JS
 
+- [Secao-02-Aprendendo-ES6/23-Variavel-const-no-JS.html](Secao-02-Aprendendo-ES6/23-Variavel-const-no-JS.html)
+
+```javascript
+    const secreteNumber = 20;
+
+    const jose = {
+        name: 'Jose Malcher jr',
+        age: 36
+    }
+    Object.freeze(jose); // 'congela' o atributos do objeto
+
+    jose.age = 10;
+
+    console.log(jose)
+```
+
 15. 2.4 - Temporal Dead Zone
 
 16. 3.1 - Introdução a Arrow Function

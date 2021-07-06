@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.3 - Variável const no JS</title>
+</head>
+<body>
+<script>
+    const secreteNumber = 20;
+
+    const jose = {
+        name: 'Jose Malcher jr',
+        age: 36
+    }
+    Object.freeze(jose); // 'congela' o atributos do objeto
+
+    jose.age = 10;
+
+    console.log(jose)
+
+</script>
+</body>
+</html>
