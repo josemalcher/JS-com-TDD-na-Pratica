@@ -108,6 +108,81 @@ Logged in as josemalcher on https://registry.npmjs.org/.
 
 ## <a name="parte2">2 - Seção 2: Aprendendo ES6</a>
 
+11. 1 - Introdução ao ES6
+
+12. 2.1 - Escopo do JS
+
+13. 2.2 - Variável let no JS
+
+14. 2.3 - Variável const no JS
+
+15. 2.4 - Temporal Dead Zone
+
+16. 3.1 - Introdução a Arrow Function
+
+17. 3.2 - Arrow Function e o Lexical This
+
+18. 4.1 - Introdução a Template Literals
+
+19. 4.2 - Usando Template Literals para Html Fragments
+
+20. 4.3 - Tagged Template
+
+21. 5.1 - Shorthand Properties
+
+22. 5.2 - Default Parameters
+
+23. 5.3 - Novos métodos para Strings
+
+24. 6.1 - Array.from()
+
+25. 6.2 - Array.of()
+
+26. 6.3 - Array.find() e Array.findIndex()
+
+27. 6.4 - array.fill()
+
+28. 7.1 - Introdução ao Destructuring
+
+29. 7.2 - Destructuring em Arrays
+
+30. 7.3 - Fazendo swap de variáveis com destructuring
+
+31. 8.1 - Introdução ao Spread Operator
+
+32. 8.2 - Usando o spread dentro de funções
+
+33. 8.3 - Rest params
+
+34. 9.1 - Introdução a Promises
+
+35. 9.2 - Exemplo Real de Promises
+
+36. 9.3 - Manipulando múltiplas Promises
+
+37. 10.1 - Herança Prototipal
+
+38. 10.2 - Criando Classes do ES6
+
+39. 10.3 - Usando extended classes
+
+40. 11.1 - Introdução a Symbols
+
+41. 11.2 - Iterators e Iterables - for...of
+
+42. 12.1 - Introdução a Generators
+
+43. 12.2 - Usando Generators para fluxos assíncronos
+
+44. 13.1 - Introdução ao Proxy
+
+45. 14.1 - Introdução ao Set
+
+46. 14.2 - Introdução ao WeakSet
+
+47. 15.1 - Introdução ao Map
+
+48. 15.2 - Introdução ao WeakMap
 
 
 [Voltar ao Índice](#indice)

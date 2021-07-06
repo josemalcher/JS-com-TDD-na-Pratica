@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/josemalcher/JS-com-TDD-na-Pratica/issues"
   },
-  "homepage": "https://github.com/josemalcher/JS-com-TDD-na-Pratica#readme"
+  "homepage": "https://github.com/josemalcher/JS-com-TDD-na-Pratica#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0"
+  },
+  "dependencies": {
+    "husky": "^7.0.1"
+  }
 }
