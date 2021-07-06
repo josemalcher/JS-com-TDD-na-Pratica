@@ -110,6 +110,12 @@ Logged in as josemalcher on https://registry.npmjs.org/.
 
 11. 1 - Introdução ao ES6
 
+- [https://nipher.io/](https://nipher.io/)
+- [https://ponyfoo.com/articles/tagged/es6-in-depth](https://ponyfoo.com/articles/tagged/es6-in-depth)
+- [http://kangax.github.io/compat-table/es6/](http://kangax.github.io/compat-table/es6/)
+- [http://es6-features.org/#Constants](http://es6-features.org/#Constants)
+- [https://github.com/willianjusten/es6-curso](https://github.com/willianjusten/es6-curso)
+
 12. 2.1 - Escopo do JS
 
 13. 2.2 - Variável let no JS
