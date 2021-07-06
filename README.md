@@ -173,6 +173,16 @@ const name = 'jake';
 
 15. 2.4 - Temporal Dead Zone
 
+- [Secao-02-Aprendendo-ES6/24-Temporal-Dead-Zone.html](Secao-02-Aprendendo-ES6/24-Temporal-Dead-Zone.html)
+
+```javascript
+    console.log(dog);
+    //let dog = 'GRRRRRRRR'; // Uncaught ReferenceError: Cannot access 'dog' before initialization
+    const dog = 'GRRRRRRRR'; // Uncaught ReferenceError: Cannot access 'dog' before initialization
+
+    //var dog = 'GRRRRRRRR'; // undefined
+```
+
 16. 3.1 - Introdução a Arrow Function
 
 17. 3.2 - Arrow Function e o Lexical This
