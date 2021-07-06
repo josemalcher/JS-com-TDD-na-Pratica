@@ -117,7 +117,9 @@ Logged in as josemalcher on https://registry.npmjs.org/.
 - [https://github.com/willianjusten/es6-curso](https://github.com/willianjusten/es6-curso)
 
 12. 2.1 - Escopo do JS
-    
+
+- [Secao-02-Aprendendo-ES6/21-Escopo-do-JS.html](Secao-02-Aprendendo-ES6/21-Escopo-do-JS.html)
+
 ```javascript
 var animal;
 
@@ -136,6 +138,20 @@ const name = 'jake';
 ```
 
 13. 2.2 - Variável let no JS
+
+- [Secao-02-Aprendendo-ES6/22-Variavel-let-no-JS.html](Secao-02-Aprendendo-ES6/22-Variavel-let-no-JS.html)
+
+```javascript
+    var animal = 'cat';
+    console.log(animal); // cat
+
+    {
+        let animal = 'DOG';
+        console.log(animal) // DOG
+    }
+
+    console.log(animal) // cat
+```
 
 14. 2.3 - Variável const no JS
 
