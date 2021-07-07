@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.2 - Arrow Function e o Lexical This</title>
+</head>
+<body>
+
+<button id="btn">Make my sandwich</button>
+
+
+<script>
+    const sandwich = {
+        bread: 'white',
+        cheese: 'cheedar',
+
+        prepare: function () {
+            return `I want a sandwich with ${this.bread} bread and ${this.cheese} cheese!`;
+        },
+
+        make: function () {
+            window.setTimeout(
+                () => {
+                    console.log(this.prepare());
+                }, 500)
+        }
+    };
+
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function () {
+        sandwich.make();
+    });
+
+</script>
+</body>
+</html>

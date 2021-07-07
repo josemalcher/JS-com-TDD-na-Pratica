@@ -221,6 +221,33 @@ const name = 'jake';
 
 17. 3.2 - Arrow Function e o Lexical This
 
+- [Secao-02-Aprendendo-ES6/32-Arrow-Function-e-o-Lexical-This.html](Secao-02-Aprendendo-ES6/32-Arrow-Function-e-o-Lexical-This.html)
+
+```javascript
+    const sandwich = {
+        bread: 'white',
+        cheese: 'cheedar',
+
+        prepare: function () {
+            return `I want a sandwich with ${this.bread} bread and ${this.cheese} cheese!`;
+        },
+
+        make: function () {
+            window.setTimeout(
+                () => {
+                    console.log(this.prepare());
+                }, 500)
+        }
+    };
+
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function () {
+        sandwich.make();
+    });
+
+```
+
 18. 4.1 - Introdução a Template Literals
 
 19. 4.2 - Usando Template Literals para Html Fragments
