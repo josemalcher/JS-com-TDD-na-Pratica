@@ -185,6 +185,40 @@ const name = 'jake';
 
 16. 3.1 - Introdução a Arrow Function
 
+- [https://ponyfoo.com/articles/es6-arrow-functions-in-depth](https://ponyfoo.com/articles/es6-arrow-functions-in-depth)
+- [https://nipher.io/ES6-arrow-functions/](https://nipher.io/ES6-arrow-functions/)
+
+- [Secao-02-Aprendendo-ES6/31-Introducao-a-Arrow-Function.html(Secao-02-Aprendendo-ES6/31-Introducao-a-Arrow-Function.html)
+
+```javascript
+  const ireland = ['Dublin', 'Galway', 'Brasil'];
+
+    const maps1 = ireland.map(function (name) {
+        return `Eu amo ${name}!`;
+    })
+    console.log(maps1); //(3)["Eu amo Dublin!", "Eu amo Galway!", "Eu amo Brasil!"]
+
+    const maps2 = ireland.map((name) => {
+        return `Eu amo ${name}!`;
+    })
+    console.log(maps2); // (3)["Eu amo Dublin!", "Eu amo Galway!", "Eu amo Brasil!"]
+
+    const maps3 = ireland.map(name => {
+        return `Eu amo ${name}!`;
+    })
+    console.log(maps3); // (3)["Eu amo Dublin!", "Eu amo Galway!", "Eu amo Brasil!"]
+
+    const maps4 = ireland.map(name => `Eu amo ${name}!`);
+
+    console.log(maps4); // (3)["Eu amo Dublin!", "Eu amo Galway!", "Eu amo Brasil!"]
+
+    const mapsfilter = ireland
+        .filter(name => name === 'Brasil')
+        .map(name => `Eu amo ${name}!`);
+
+    console.log(mapsfilter); // ["Eu amo Brasil!"]
+```
+
 17. 3.2 - Arrow Function e o Lexical This
 
 18. 4.1 - Introdução a Template Literals
