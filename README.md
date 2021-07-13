@@ -282,6 +282,41 @@ apple`;
 
 19. 4.2 - Usando Template Literals para Html Fragments
 
+- [Secao-02-Aprendendo-ES6/42-Usando-Template-Literals-para-Htm-Fragments.html](Secao-02-Aprendendo-ES6/42-Usando-Template-Literals-para-Htm-Fragments.html)
+
+```javascript
+    const article = {
+        title: 'Aprendendo Template Strings',
+        intro: 'Uma breve explicação de como se utilizar template strings do ES6 em seu código hoje!',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, officia, perspiciatis? Architecto, molestias autem. Repellat, laborum deserunt soluta necessitatibus. Tenetur illo, id magnam numquam neque illum temporibus, in qui eos.',
+        tags: ['es6', 'js', 'template-literal'],
+        author: 'José'
+    };
+
+    function renderAuthor(name) {
+        return (name) ? name : 'unknown';
+    }
+
+    const markup = `
+    <article>
+            <header>
+                <h1>${article.title}</h1>
+            </header>
+            <section>
+                <p>${article.intro}</p>
+            </section>
+            <footer>
+                <ul>
+                    ${article.tags.map((tag) => `<li>${tag}</li>`).join('')}
+                </ul>
+                <p>Author: ${renderAuthor(article.author)}</p>
+            </footer>
+        </article>
+    `;
+
+    document.body.innerHTML = markup;
+```
+
 20. 4.3 - Tagged Template
 
 21. 5.1 - Shorthand Properties
