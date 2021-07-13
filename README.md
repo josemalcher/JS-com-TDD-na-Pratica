@@ -250,6 +250,36 @@ const name = 'jake';
 
 18. 4.1 - Introdução a Template Literals
 
+- [https://ponyfoo.com/articles/es6-template-strings-in-depth](https://ponyfoo.com/articles/es6-template-strings-in-depth)
+- [https://nipher.io/es6-template-literals/](https://nipher.io/es6-template-literals/)
+- [Secao-02-Aprendendo-ES6/41-Introducao-a-Template-Literals.html](Secao-02-Aprendendo-ES6/41-Introducao-a-Template-Literals.html)
+
+```javascript
+    const ireland = {
+        live: 'Dublin',
+        love: 'Galway'
+    };
+
+    const text = 'Eu moro em ' + ireland.live + ' e sou apaixonado por ' + ireland.love+'!';
+
+    const newText = `Eu moro em ${ireland.live} e sou apaixonado por ${ireland.love}!`;
+
+    const fruits = 'bannana'
+        + `\n`
+        + 'orange'
+        + `\n`
+        + 'apple';
+
+    const newFruits =
+        `bannana
+orange
+apple`;
+
+    console.log(newFruits);
+
+    // console.log(newText);
+```
+
 19. 4.2 - Usando Template Literals para Html Fragments
 
 20. 4.3 - Tagged Template
