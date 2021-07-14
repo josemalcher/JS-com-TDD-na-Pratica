@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.2 - Default Parameters</title>
+</head>
+<body>
+<script>
+    function hello(name = 'José', surname = 'Malcher Jr') {
+        console.log(`Hello ${name} ${surname}! How are you?`);
+    }
+
+    hello();                  // Hello José Malcher Jr! How are you?
+    hello('Jonas', 'Mendes'); // Hello Jonas Mendes! How are you?
+    hello('Jonas');           // Hello Jonas Malcher Jr! How are you?
+</script>
+</body>
+</html>

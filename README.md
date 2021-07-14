@@ -367,6 +367,19 @@ apple`;
 
 22. 5.2 - Default Parameters
 
+- [https://nipher.io/es6-default-parameters/](https://nipher.io/es6-default-parameters/)
+- [Secao-02-Aprendendo-ES6/52-Default-Parameters.html](Secao-02-Aprendendo-ES6/52-Default-Parameters.html)
+
+```javascript
+   function hello(name = 'José', surname = 'Malcher Jr') {
+        console.log(`Hello ${name} ${surname}! How are you?`);
+    }
+
+    hello();                  // Hello José Malcher Jr! How are you?
+    hello('Jonas', 'Mendes'); // Hello Jonas Mendes! How are you?
+    hello('Jonas');           // Hello Jonas Malcher Jr! How are you?
+```
+
 23. 5.3 - Novos métodos para Strings
 
 24. 6.1 - Array.from()
