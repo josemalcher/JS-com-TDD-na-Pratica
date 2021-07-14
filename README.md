@@ -382,6 +382,17 @@ apple`;
 
 23. 5.3 - Novos métodos para Strings
 
+- [Secao-02-Aprendendo-ES6/53-Novos-metodos-para-Strings.html](Secao-02-Aprendendo-ES6/53-Novos-metodos-para-Strings.html)
+
+```javascript
+    let text = 'Lorem ipsum dolor sit amet';
+
+    console.log(text.startsWith('rem', 2)); // true
+    console.log(text.endsWith('ame', 25));  // true
+    console.log(text.includes('ipsum'));   //  true
+    console.log('lol'.repeat(10)); // lollollollollollollollollollol
+```
+
 24. 6.1 - Array.from()
 
 25. 6.2 - Array.of()
