@@ -461,6 +461,20 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 27. 6.4 - array.fill()
 
+- [Secao-02-Aprendendo-ES6/64-array-fill.html](Secao-02-Aprendendo-ES6/64-array-fill.html)
+
+```javascript
+    const arr = new Array(50);
+    arr.fill('lol', 3, 6);
+    console.log(arr);
+    // (50)[empty × 3, "lol", "lol", "lol", empty × 44]
+
+    const newArr = [1,2,3,4,5,6];
+    newArr.fill('lol', 1, 3);
+    console.log(newArr);
+    // (6)[1, "lol", "lol", 4, 5, 6]
+```
+
 28. 7.1 - Introdução ao Destructuring
 
 29. 7.2 - Destructuring em Arrays
