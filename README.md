@@ -395,6 +395,30 @@ apple`;
 
 24. 6.1 - Array.from()
 
+- [https://exploringjs.com/es6/ch_arrays.html](https://exploringjs.com/es6/ch_arrays.html)
+- [Secao-02-Aprendendo-ES6/61-Array-from.html](Secao-02-Aprendendo-ES6/61-Array-from.html)
+
+```html
+<ul id="list">
+    <li>Jose</li>
+    <li>Malcher</li>
+    <li>Jr</li>
+</ul>
+
+<script>
+    const text = 'jose';
+    console.log(Array.from(text)); // (4)["j", "o", "s", "e"]
+
+    const list = document.querySelectorAll('#list li'); // (3)[li, li, li]
+    const listArray = Array.from(list);
+    console.log(listArray);
+
+    const nomes = listArray.map(name => name.textContent);
+    console.log(nomes) // (3)["Jose", "Malcher", "Jr"]
+
+</script>
+```
+
 25. 6.2 - Array.of()
 
 26. 6.3 - Array.find() e Array.findIndex()

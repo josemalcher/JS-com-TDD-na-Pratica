@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.1 - Array.from()</title>
+</head>
+<body>
+
+<ul id="list">
+    <li>Jose</li>
+    <li>Malcher</li>
+    <li>Jr</li>
+</ul>
+
+<script>
+    const text = 'jose';
+    console.log(Array.from(text)); // (4)["j", "o", "s", "e"]
+
+    const list = document.querySelectorAll('#list li'); // (3)[li, li, li]
+    const listArray = Array.from(list);
+    console.log(listArray);
+
+    const nomes = listArray.map(name => name.textContent);
+    console.log(nomes) // (3)["Jose", "Malcher", "Jr"]
+
+</script>
+</body>
+</html>
