@@ -432,6 +432,33 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 26. 6.3 - Array.find() e Array.findIndex()
 
+- [Secao-02-Aprendendo-ES6/63-Array-find-e-Array-findIndex.html](Secao-02-Aprendendo-ES6/63-Array-find-e-Array-findIndex.html)
+
+```javascript
+    const data = [
+        {
+            name: 'Willian',
+            age: 26,
+            city: 'Dublin'
+        },
+        {
+            name: 'Jonas',
+            age: 22,
+            city: 'Cologne'
+        }
+    ];
+
+    const sampleArray = [4, -5, 0, -1];
+    const underZero = sampleArray.find(x => x < 0);
+    const underZeroIndex = sampleArray.findIndex(x => x < 0);
+    //console.log(underZero);      // -5
+    //console.log(underZeroIndex); // 1
+
+    const jonas = data.find(person => person.name === 'Jonas');
+    const jonasIndex = data.findIndex(person => person.name === 'Jonas');
+    console.log(jonasIndex); // 1
+```
+
 27. 6.4 - array.fill()
 
 28. 7.1 - Introdução ao Destructuring
