@@ -421,6 +421,15 @@ apple`;
 
 25. 6.2 - Array.of()
 
+- [Secao-02-Aprendendo-ES6/62-Array-of.html](Secao-02-Aprendendo-ES6/62-Array-of.html)
+
+```javascript
+const array = Array.of(1,4, 'Willian', {name: 'Jonas'});
+
+console.log(array); // (4) [1, 4, "Willian", {…}]
+
+```
+
 26. 6.3 - Array.find() e Array.findIndex()
 
 27. 6.4 - array.fill()
