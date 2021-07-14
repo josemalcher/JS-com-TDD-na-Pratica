@@ -319,6 +319,29 @@ apple`;
 
 20. 4.3 - Tagged Template
 
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [Secao-02-Aprendendo-ES6/43-Tagged-Templat.html](Secao-02-Aprendendo-ES6/43-Tagged-Templat.html)
+
+```javascript
+    const city = 'Dubin';
+    const something = 'Guinness';
+    const otherThing = 'Brasill';
+
+    function green(template, ...values) {
+        return template.reduce((acumulador, part, i) => {
+            return `
+                ${acumulador}
+                <span class="green">${values[i -1].toUpperCase()}</span>
+                ${part}
+            `
+        });
+    }
+
+    const frase = green`I live in ${city} the city of ${something} and ${otherThing}`;
+
+    document.body.innerHTML = frase;
+```
+
 21. 5.1 - Shorthand Properties
 
 22. 5.2 - Default Parameters
