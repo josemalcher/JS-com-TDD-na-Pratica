@@ -344,6 +344,27 @@ apple`;
 
 21. 5.1 - Shorthand Properties
 
+- [Secao-02-Aprendendo-ES6/51-Shorthand-Properties.html](Secao-02-Aprendendo-ES6/51-Shorthand-Properties.html)
+
+```javascript
+ let firstName = 'José';
+    let surname = 'Malcher';
+    let age = 36;
+
+    const person = {
+        firstName,
+        surname,
+        age,
+
+        hello(){
+            console.log('Hello!!!')
+        }
+    };
+
+    console.log(person);
+    person.hello();
+```
+
 22. 5.2 - Default Parameters
 
 23. 5.3 - Novos métodos para Strings
