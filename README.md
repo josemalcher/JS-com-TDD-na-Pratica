@@ -846,6 +846,41 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 42. 12.1 - Introdução a Generators
 
+- [https://ponyfoo.com/articles/es6-generators-in-depth](https://ponyfoo.com/articles/es6-generators-in-depth)
+
+-[Secao-02-Aprendendo-ES6/121-Introducao-a-Generators.html](Secao-02-Aprendendo-ES6/121-Introducao-a-Generators.html)
+
+```javascript
+<script>
+    function* genNames() {
+        console.log('Chamando primeiro nome!');
+        yield 'Willian';
+
+        console.log('Chamando segundo nome!');
+        yield 'Jonas';
+
+        console.log('Chamando terceiro nome!');
+        yield 'Gabriel';
+    }
+
+    const names = genNames();
+
+    console.log(names.next());
+    console.log(names.next());
+    console.log(names.next());
+
+
+/*    Chamando primeiro nome!
+         Object
+     Chamando segundo nome!
+         Object
+     Chamando terceiro nome!
+         Object
+    */
+</script>
+```
+
+
 43. 12.2 - Usando Generators para fluxos assíncronos
 
 44. 13.1 - Introdução ao Proxy
