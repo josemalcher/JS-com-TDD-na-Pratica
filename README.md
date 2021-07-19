@@ -883,6 +883,39 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 43. 12.2 - Usando Generators para fluxos assíncronos
 
+-[Secao-02-Aprendendo-ES6/122-Usando-Generators-para-fluxos-assincronos.html](Secao-02-Aprendendo-ES6/122-Usando-Generators-para-fluxos-assincronos.html)
+
+```javascript
+<script>
+  //https://josemalcher.net/wp-json/wp/v2/posts
+  //https://api.github.com/users/josemalcher/repos
+
+  function ajax(url) {
+    fetch(url)
+            .then(data => data.json())
+            .then(data => dados.next(data));
+  }
+
+  function* ajaxGen() {
+    console.log('Buscando posts...');
+    const posts = yield ajax('https://josemalcher.net/wp-json/wp/v2/posts');
+    console.log(posts);
+
+    console.log('Buscando dados github...')
+    const github = yield ajax('https://api.github.com/users/josemalcher/repos');
+    console.log(github);
+
+    console.log('Buscando dados github 2...')
+    const github2 = yield ajax('https://api.github.com/users/josemalcher/repos');
+    console.log(github2);
+  }
+
+  const dados = ajaxGen();
+  dados.next();
+
+</script>
+```
+
 44. 13.1 - Introdução ao Proxy
 
 45. 14.1 - Introdução ao Set
