@@ -519,6 +519,20 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 29. 7.2 - Destructuring em Arrays
 
+- [Secao-02-Aprendendo-ES6/72-Destructuring-em-Arrays.html](Secao-02-Aprendendo-ES6/72-Destructuring-em-Arrays.html)
+
+```javascript
+<script>
+    const arr = ['Jose', 'Malcher', 36, 'Castanhal-PA'];
+    const [name, surname, age, city] = arr;
+
+    console.log(name);
+    console.log(surname);
+    console.log(age);
+    console.log(city);
+</script>
+```
+
 30. 7.3 - Fazendo swap de variáveis com destructuring
 
 31. 8.1 - Introdução ao Spread Operator
