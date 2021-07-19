@@ -577,6 +577,22 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 32. 8.2 - Usando o spread dentro de funções
 
+- [Secao-02-Aprendendo-ES6/82-Usando-o-spread-dentro-de-funcoes.html](Secao-02-Aprendendo-ES6/82-Usando-o-spread-dentro-de-funcoes.html)
+
+```javascript
+<script>
+    function makeSandwich(bread, cheese, sauce) {
+        console.log(`Your sandwich with ${bread} bread, ${cheese} cheese and ${sauce} is done!`);
+    }
+
+    const ingredients = ['white', 'cheedar', 'berbecue'];
+    makeSandwich(...ingredients);
+    
+    //Your sandwich with white bread, cheedar cheese and berbecue is done!
+
+</script>
+```
+
 33. 8.3 - Rest params
 
 34. 9.1 - Introdução a Promises

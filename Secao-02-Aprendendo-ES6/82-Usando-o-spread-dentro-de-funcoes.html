@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8.2 - Usando o spread dentro de funções</title>
+</head>
+<body>
+<script>
+    function makeSandwich(bread, cheese, sauce) {
+        console.log(`Your sandwich with ${bread} bread, ${cheese} cheese and ${sauce} is done!`);
+    }
+
+    const ingredients = ['white', 'cheedar', 'berbecue'];
+    makeSandwich(...ingredients);
+
+    //Your sandwich with white bread, cheedar cheese and berbecue is done!
+
+</script>
+</body>
+</html>
