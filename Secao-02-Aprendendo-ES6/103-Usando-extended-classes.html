@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.3 - Usando extended classes</title>
+</head>
+<body>
+<script>
+    class Animal {
+        constructor(name) {
+            this.name = name;
+        }
+
+        hello() {
+            console.log(`I'm ${this.name}`);
+        }
+    }
+
+    class Dog extends Animal {
+        constructor(name, sound) {
+            super();
+            this.sound = sound;
+        }
+
+        bark() {
+            console.log(`${this.sound} - I'm ${this.name}`);
+        }
+    }
+
+    const elephant  = new Animal('Dumbo');
+    const dog       = new Dog('Jake', 'Au AU');
+</script>
+</body>
+</html>

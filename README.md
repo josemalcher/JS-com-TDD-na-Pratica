@@ -756,6 +756,36 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 39. 10.3 - Usando extended classes
 
+- [Secao-02-Aprendendo-ES6/103-Usando-extended-classes.html](Secao-02-Aprendendo-ES6/103-Usando-extended-classes.html)
+
+```javascript
+<script>
+    class Animal {
+        constructor(name) {
+            this.name = name;
+        }
+
+        hello() {
+            console.log(`I'm ${this.name}`);
+        }
+    }
+
+    class Dog extends Animal {
+        constructor(name, sound) {
+            super();
+            this.sound = sound;
+        }
+
+        bark() {
+            console.log(`${this.sound} - I'm ${this.name}`);
+        }
+    }
+
+    const elephant  = new Animal('Dumbo');
+    const dog       = new Dog('Jake', 'Au AU');
+</script>
+```
+
 40. 11.1 - Introdução a Symbols
 
 41. 11.2 - Iterators e Iterables - for...of
