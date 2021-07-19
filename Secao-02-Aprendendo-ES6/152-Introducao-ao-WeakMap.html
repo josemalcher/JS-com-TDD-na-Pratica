@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15.2 - Introdução ao WeakMap</title>
+</head>
+<body>
+<script>
+    let obj1 = {
+        name: 'Jose',
+        age: 26
+    };
+
+    let obj2 = {
+        name: 'Malcher Jr',
+        age: 36
+    };
+
+    let wm = new WeakMap();
+
+    wm.set(obj1, 'Info do Jose');
+    wm.set(obj2, 'Info do Malcher Jr');
+</script>
+</body>
+</html>
