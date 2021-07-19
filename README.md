@@ -614,7 +614,7 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 - [https://ponyfoo.com/articles/es6-promises-in-depth](https://ponyfoo.com/articles/es6-promises-in-depth)
 - [https://nipher.io/es6-promises/](https://nipher.io/es6-promises/)
 
-- [Secao-02-Aprendendo-ES6/92-Exemplo-Real-de-Promises.html](Secao-02-Aprendendo-ES6/92-Exemplo-Real-de-Promises.html)
+- [Secao-02-Aprendendo-ES6/91-Introducao-a-Promises.html](Secao-02-Aprendendo-ES6/91-Introducao-a-Promises.html)
 
 ```javascript
 <script>
@@ -641,6 +641,26 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 ```
 
 35. 9.2 - Exemplo Real de Promises
+
+- [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+- [Secao-02-Aprendendo-ES6/92-Exemplo-Real-de-Promises.html](Secao-02-Aprendendo-ES6/92-Exemplo-Real-de-Promises.html)
+
+```javascript
+<script>
+    var post = fetch('https://josemalcher.net/wp-json/wp/v2/posts');
+
+    // pending
+    // resolved
+    // rejected
+
+    post
+        .then(data => data.json())
+        .then(data => data.map(post=>{
+            console.log(post.title);
+        }));
+</script>
+```
 
 36. 9.3 - Manipulando múltiplas Promises
 
