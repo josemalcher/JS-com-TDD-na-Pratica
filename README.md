@@ -788,6 +788,33 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 40. 11.1 - Introdução a Symbols
 
+- [http://cangaceirojavascript.com.br/symbol-exemplo-uso-javascript/](http://cangaceirojavascript.com.br/symbol-exemplo-uso-javascript/)
+- [https://exploringjs.com/es6/ch_symbols.html](https://exploringjs.com/es6/ch_symbols.html)
+
+- [Secao-02-Aprendendo-ES6/111-Introducao-a-Symbols.html](Secao-02-Aprendendo-ES6/111-Introducao-a-Symbols.html)
+
+```javascript
+<script>
+    let foo = Symbol('name');
+    let bar = Symbol('name');
+
+    // console.log(foo == bar);
+    //
+
+    let obj = {
+        [Symbol('name')]: 'Willian',
+        [Symbol('age')]: 26,
+        city: 'Dublin'
+    };
+
+    const symbols = Object.getOwnPropertySymbols(obj);
+
+    const data = symbols.map(sym => obj[sym]);
+
+    console.log(data);
+</script>
+```
+
 41. 11.2 - Iterators e Iterables - for...of
 
 42. 12.1 - Introdução a Generators
