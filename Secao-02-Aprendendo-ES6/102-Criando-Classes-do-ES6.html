@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.2 - Criando Classes do ES6</title>
+</head>
+<body>
+<script>
+    class Animal {
+        constructor(kind, sound) {
+            this.kind = kind;
+            this.sound = sound;
+        }
+
+        hello() {
+            console.log(`${this.sound} I'm a ${this.kind}`);
+        }
+
+        static info() {
+            console.log('THis is a class to create animals!');
+        }
+
+        get name() {
+            console.log(`${this.sound} - My Name is Jake`);
+        }
+
+        set name(nick) {
+            this.nick = nick;
+        }
+    }
+
+    const dog = new Animal('dog', 'auauauau');
+    const cat = new Animal('cat', 'miau');
+</script>
+</body>
+</html>

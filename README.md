@@ -720,6 +720,40 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 38. 10.2 - Criando Classes do ES6
 
+- [https://ponyfoo.com/articles/es6-classes-in-depth](https://ponyfoo.com/articles/es6-classes-in-depth)
+
+-[Secao-02-Aprendendo-ES6/102-Criando-Classes-do-ES6.html](Secao-02-Aprendendo-ES6/102-Criando-Classes-do-ES6.html)
+
+```javascript
+<script>
+    class Animal {
+        constructor(kind, sound) {
+            this.kind = kind;
+            this.sound = sound;
+        }
+
+        hello() {
+            console.log(`${this.sound} I'm a ${this.kind}`);
+        }
+
+        static info() {
+            console.log('THis is a class to create animals!');
+        }
+
+        get name() {
+            console.log(`${this.sound} - My Name is Jake`);
+        }
+
+        set name(nick) {
+            this.nick = nick;
+        }
+    }
+
+    const dog = new Animal('dog', 'auauauau');
+    const cat = new Animal('cat', 'miau');
+</script>
+```
+
 39. 10.3 - Usando extended classes
 
 40. 11.1 - Introdução a Symbols
