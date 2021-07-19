@@ -977,6 +977,28 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 46. 14.2 - Introdução ao WeakSet
 
+- [https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth](https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth)
+
+- [Secao-02-Aprendendo-ES6/142-Introducao-ao-WeakSet.html](Secao-02-Aprendendo-ES6/142-Introducao-ao-WeakSet.html)
+
+```javascript
+ <script>
+    let obj1 = {
+    name: 'Willian',
+    age: 26
+};
+
+    let obj2 = {
+    name: 'Jonas',
+    age: 22
+};
+
+    let ws = new WeakSet([obj1, obj2]);
+    // não interator
+    // guarda somente objetos / únicos
+</script>
+```
+
 47. 15.1 - Introdução ao Map
 
 48. 15.2 - Introdução ao WeakMap
