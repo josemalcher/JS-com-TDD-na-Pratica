@@ -817,6 +817,33 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 41. 11.2 - Iterators e Iterables - for...of
 
+-[Secao-02-Aprendendo-ES6/112-Iterators-e-Iterables-for-of.html](Secao-02-Aprendendo-ES6/112-Iterators-e-Iterables-for-of.html)
+
+```javascript
+<script>
+
+    // iterators
+    // iterable
+
+    var txt = 'Ireland'; // iterable
+    var it = txt[Symbol.iterator](); // iterator
+
+    // console.log( it.next() );
+    // console.log( it.next() );
+    // console.log( it.next() );
+    // console.log( it.next() );
+    // console.log( it.next() );
+    // console.log( it.next() );
+    // console.log( it.next() );
+    // console.log( it.next() );
+
+    for (letter of txt) {
+        console.log(letter);
+        if (letter === 'a') break;
+    }
+</script>
+```
+
 42. 12.1 - Introdução a Generators
 
 43. 12.2 - Usando Generators para fluxos assíncronos
