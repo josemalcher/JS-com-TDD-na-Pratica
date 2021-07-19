@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8.1 - Introdução ao Spread Operator</title>
+</head>
+<body>
+<script>
+    let front = ['react', 'vue', 'angular'];
+    let back = ['python', 'php', 'nodeJS'];
+
+    let fullstack = [...front, 'RxJS', ...back];
+    console.log(fullstack);
+    // (7)["react", "vue", "angular", "RxJS", "python", "php", "nodeJS"]
+
+    console.log([...'Malcher']); // (7)["M", "a", "l", "c", "h", "e", "r"]
+    console.log(...front); // react vue angular
+
+</script>
+</body>
+</html>

@@ -556,6 +556,25 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 31. 8.1 - Introdução ao Spread Operator
 
+- [https://ponyfoo.com/articles/es6-spread-and-butter-in-depth](https://ponyfoo.com/articles/es6-spread-and-butter-in-depth)
+
+- [Secao-02-Aprendendo-ES6/81-Introducao-ao-Spread-Operator.html](Secao-02-Aprendendo-ES6/81-Introducao-ao-Spread-Operator.html)
+
+```javascript
+<script>
+    let front = ['react', 'vue', 'angular'];
+    let back = ['python', 'php', 'nodeJS'];
+
+    let fullstack = [...front, 'RxJS', ...back];
+    console.log(fullstack);
+    // (7)["react", "vue", "angular", "RxJS", "python", "php", "nodeJS"]
+
+    console.log([...'Malcher']); // (7)["M", "a", "l", "c", "h", "e", "r"]
+    console.log(...front); // react vue angular
+
+</script>
+```
+
 32. 8.2 - Usando o spread dentro de funções
 
 33. 8.3 - Rest params
