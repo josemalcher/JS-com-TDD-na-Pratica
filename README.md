@@ -694,6 +694,30 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 37. 10.1 - Herança Prototipal
 
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+- [Secao-02-Aprendendo-ES6/101-HerancaPrototipal.html](Secao-02-Aprendendo-ES6/101-HerancaPrototipal.html)
+
+```javascript
+<script>
+  //class
+  function Animal(kind, sound) {
+    //constructor
+    this.kind = kind;
+    this.sound = sound;
+  }
+
+  //methods
+  Animal.prototype.hello = function () {
+    console.log(`${this.sound} I'm a ${this.kind}`);
+  };
+
+  const dog = new Animal('dog', 'AUAUAUAU');
+  const cat = new Animal('Cat', 'meouww');
+
+</script>
+```
+
 38. 10.2 - Criando Classes do ES6
 
 39. 10.3 - Usando extended classes

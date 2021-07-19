@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.1 - Herança Prototipal</title>
+</head>
+<body>
+<script>
+  //class
+  function Animal(kind, sound) {
+    //constructor
+    this.kind = kind;
+    this.sound = sound;
+  }
+
+  //methods
+  Animal.prototype.hello = function () {
+    console.log(`${this.sound} I'm a ${this.kind}`);
+  };
+
+  const dog = new Animal('dog', 'AUAUAUAU');
+  const cat = new Animal('Cat', 'meouww');
+
+</script>
+</body>
+</html>
