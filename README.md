@@ -595,6 +595,20 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 33. 8.3 - Rest params
 
+- []()
+
+```javascript
+<script>
+    function multiply(mult, ...args) {
+        return args.map(arg => arg * mult);
+    }
+
+    console.log(multiply(10, 1, 2, 3, 4, 5));
+    // (5)[10, 20, 30, 40, 50]
+
+</script>
+```
+
 34. 9.1 - Introdução a Promises
 
 35. 9.2 - Exemplo Real de Promises
