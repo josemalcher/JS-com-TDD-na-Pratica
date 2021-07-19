@@ -1001,6 +1001,20 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 47. 15.1 - Introdução ao Map
 
+- [https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth](https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth)
+  
+- [Secao-02-Aprendendo-ES6/151-Introducao-ao-Map.html](Secao-02-Aprendendo-ES6/151-Introducao-ao-Map.html)
+
+```javascript
+<script>
+    let m = new Map();
+
+    m.set('Willian', 26);
+    m.set('Jonas', 22);
+    m.set('Godoy', 30);
+</script>
+```
+
 48. 15.2 - Introdução ao WeakMap
 
 
