@@ -477,6 +477,10 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 28. 7.1 - Introdução ao Destructuring
 
+- [https://ponyfoo.com/articles/es6-destructuring-in-depth](https://ponyfoo.com/articles/es6-destructuring-in-depth)
+
+- [Secao-02-Aprendendo-ES6/71-Introducao-ao-Destructuring.html](Secao-02-Aprendendo-ES6/71-Introducao-ao-Destructuring.html)
+
 ```javascript
 <script>
     var data = {
