@@ -477,6 +477,42 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 28. 7.1 - Introdução ao Destructuring
 
+```javascript
+<script>
+    var data = {
+        name: 'José',
+        surname: 'Malcher Jr',
+        age: 36,
+        blog: 'https://josemalcher.net',
+        social: {
+            twitter: '@josemalcher',
+            facebook: 'fb/josemalcher'
+        }
+    };
+
+    // const name = data.name;
+    // const surname = data.surname;
+    // const twitter = data.social.twitter;
+    // console.log(name);
+    // console.log(surname);
+    // console.log(twitter);
+
+    const {name, surname} = data;
+    console.log(name);
+    console.log(surname);
+
+    const {facebook, twitter} = data.social;
+    console.log(facebook)
+    console.log(twitter);
+
+    const {facebook: fb} = data.social;
+    console.log(fb);
+
+    const {city = 'Belém'} = data; // valor default
+    console.log(city);
+</script>
+```
+
 29. 7.2 - Destructuring em Arrays
 
 30. 7.3 - Fazendo swap de variáveis com destructuring
