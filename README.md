@@ -664,6 +664,34 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 36. 9.3 - Manipulando múltiplas Promises
 
+- [Secao-02-Aprendendo-ES6/93-Manipulando-multiplas-Promises.html](Secao-02-Aprendendo-ES6/93-Manipulando-multiplas-Promises.html)
+
+```javascript
+<script>
+    const currency = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({currency: 'euro', value: 3.50});
+        }, 5000);
+    });
+
+    const countries = new Promise((resolve, reject) => {
+        resolve(['Ireland', 'England', 'Scotland']);
+    });
+
+    // Promise
+    //     .all([currency, countries]) // as duas são resolvidas
+    //     .then(responses => {
+    //         console.log(responses);
+    //     })
+
+    Promise
+        .race([currency, countries]) // quem responde primeiro é resolvida
+        .then(responses => {
+            console.log(responses);
+        })
+</script>
+```
+
 37. 10.1 - Herança Prototipal
 
 38. 10.2 - Criando Classes do ES6

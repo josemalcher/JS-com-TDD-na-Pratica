@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9.3 - Manipulando múltiplas Promises</title>
+</head>
+<body>
+<script>
+    const currency = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({currency: 'euro', value: 3.50});
+        }, 5000);
+    });
+
+    const countries = new Promise((resolve, reject) => {
+        resolve(['Ireland', 'England', 'Scotland']);
+    });
+
+    // Promise
+    //     .all([currency, countries]) // as duas são resolvidas
+    //     .then(responses => {
+    //         console.log(responses);
+    //     })
+
+    Promise
+        .race([currency, countries]) // quem responde primeiro é resolvida
+        .then(responses => {
+            console.log(responses);
+        })
+</script>
+</body>
+</html>
