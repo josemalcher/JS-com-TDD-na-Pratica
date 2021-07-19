@@ -595,7 +595,7 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 33. 8.3 - Rest params
 
-- []()
+- [Secao-02-Aprendendo-ES6/83-Rest-params.html](Secao-02-Aprendendo-ES6/83-Rest-params.html)
 
 ```javascript
 <script>
@@ -610,6 +610,35 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 ```
 
 34. 9.1 - Introdução a Promises
+
+- [https://ponyfoo.com/articles/es6-promises-in-depth](https://ponyfoo.com/articles/es6-promises-in-depth)
+- [https://nipher.io/es6-promises/](https://nipher.io/es6-promises/)
+
+- [Secao-02-Aprendendo-ES6/92-Exemplo-Real-de-Promises.html](Secao-02-Aprendendo-ES6/92-Exemplo-Real-de-Promises.html)
+
+```javascript
+<script>
+    var defer = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (true) {
+                resolve('Hello! It Work');
+            } else {
+                reject('Error');
+            }
+        }, 2000);
+    });
+
+    defer
+        .then((data) => {
+            console.log(data);
+            return 'fooooo';
+        })
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+    // Hello! It Work
+    // fooooo
+</script>
+```
 
 35. 9.2 - Exemplo Real de Promises
 
