@@ -918,6 +918,29 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 44. 13.1 - Introdução ao Proxy
 
+- [Secao-02-Aprendendo-ES6/131-Introducao-ao-Proxy.html](Secao-02-Aprendendo-ES6/131-Introducao-ao-Proxy.html)
+
+```javascript
+<script>
+    let obj = {
+    name: 'Willian',
+    age: 26
+};
+
+    let proxy = new Proxy(obj, {
+    get(target, name) {
+    console.log('Alguém está o pedindo o nome =D');
+    return target[name];
+},
+    set(target, name, value) {
+    console.log('Alguém está mudando o nome!');
+    target[name] = value.toUpperCase();
+}
+});
+
+</script>
+```
+
 45. 14.1 - Introdução ao Set
 
 46. 14.2 - Introdução ao WeakSet
