@@ -535,6 +535,25 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 30. 7.3 - Fazendo swap de variáveis com destructuring
 
+- [Secao-02-Aprendendo-ES6/73-Fazendo-swap-de-variaveis-com-destructuring.html](Secao-02-Aprendendo-ES6/73-Fazendo-swap-de-variaveis-com-destructuring.html)
+
+```javascript
+<script>
+    let a = 100;
+    let b = 999;
+    console.log('a = ', a);
+    console.log('b = ', b);
+    // a =  100
+    // b =  999
+
+    [a, b] = [b, a]
+    console.log('a = ', a);
+    console.log('b = ', b);
+    // a =  999
+    // b =  100
+</script>
+```
+
 31. 8.1 - Introdução ao Spread Operator
 
 32. 8.2 - Usando o spread dentro de funções
