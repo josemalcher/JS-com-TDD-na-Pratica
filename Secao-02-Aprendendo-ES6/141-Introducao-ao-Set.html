@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14.1 - Introdução ao Set</title>
+</head>
+<body>
+<script>
+  let mySet = new Set(['willian', 'jonas', 'godoy']);
+
+  mySet.add('marcio');
+  mySet.add('marcio');
+  mySet.add('marcio');
+  mySet.add('willian');
+
+  mySet.delete('willian');
+
+  console.log(mySet.has('willian')); // false
+  console.log(mySet.has('marcio')); // true
+
+  console.log(mySet[1]); // undefined
+
+  let it = mySet.values();
+
+  console.log(it.next()); // {value: "jonas", done: false}
+
+  for (name of it) {
+    console.log(name);
+  }
+  // godoy
+  // marcio
+</script>
+</body>
+</html>

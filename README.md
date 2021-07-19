@@ -943,6 +943,38 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 45. 14.1 - Introdução ao Set
 
+- [https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth](https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth)
+
+- [Secao-02-Aprendendo-ES6/141-Introducao-ao-Set.html](Secao-02-Aprendendo-ES6/141-Introducao-ao-Set.html)
+
+```javascript
+<script>
+  let mySet = new Set(['willian', 'jonas', 'godoy']);
+
+  mySet.add('marcio');
+  mySet.add('marcio');
+  mySet.add('marcio');
+  mySet.add('willian');
+
+  mySet.delete('willian');
+
+  console.log(mySet.has('willian')); // false
+  console.log(mySet.has('marcio')); // true
+
+  console.log(mySet[1]); // undefined
+
+  let it = mySet.values();
+
+  console.log(it.next()); // {value: "jonas", done: false}
+
+  for (name of it) {
+    console.log(name);
+  }
+  // godoy
+  // marcio
+</script>
+```
+
 46. 14.2 - Introdução ao WeakSet
 
 47. 15.1 - Introdução ao Map
