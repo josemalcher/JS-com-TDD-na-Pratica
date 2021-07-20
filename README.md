@@ -1111,6 +1111,22 @@ Vantagens de usar async/await
 
 51. Async/Await com Multiplas Promises
 
+- [Secao-03-Atualizacoes-ES7-ES8/51-Async-Awai-com-Multiplas-Promises.html](Secao-03-Atualizacoes-ES7-ES8/51-Async-Awai-com-Multiplas-Promises.html)
+
+```javascript
+<script>
+    async function getUser(user) {
+        const promisses = user.map(user => fetch(`https://api.github.com/users/${user}`)
+            .then(r => r.json())
+        );
+        const people = await Promise.all(promisses);
+        console.log(people.map(p => p.company));
+    }
+
+    getUser(['josemalcher', 'guilouro']);
+</script>
+```
+
 52. padStart e padEnd
 
 53. Exponentiation
