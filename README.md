@@ -1051,7 +1051,7 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 - [Secao-03-Atualizacoes-ES7-ES8/49-Introducao-ao-Async-Await.html](Secao-03-Atualizacoes-ES7-ES8/49-Introducao-ao-Async-Await.html)
 
-```js
+```javascript
 <body>
 <!--
 Básico
@@ -1086,6 +1086,28 @@ Vantagens de usar async/await
 ```
 
 50. Tratando erros em async/await
+
+- [Secao-03-Atualizacoes-ES7-ES8/50-Tratando-erros-em-async-await.html](Secao-03-Atualizacoes-ES7-ES8/50-Tratando-erros-em-async-await.html)
+
+```javascript
+<script>
+  async function getPosts() {
+    try {
+      const response = await fetch('https://josemalcher.net/wp-json/wp/v2/posts');
+      const data = await response.json();
+
+      return data.map(post => {
+        console.log(post.title);
+      });
+    }
+    catch(err) {
+      console.error('Noooooo, we got an error!', err);
+    }
+  }
+
+  getPosts();
+</script>
+```
 
 51. Async/Await com Multiplas Promises
 
