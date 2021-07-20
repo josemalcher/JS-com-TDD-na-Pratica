@@ -1223,6 +1223,29 @@ Vantagens de usar async/await
 
 57. Trailing Commas
 
+- [Secao-03-Atualizacoes-ES7-ES8/57-Trailing-Commas.html](Secao-03-Atualizacoes-ES7-ES8/57-Trailing-Commas.html)
+
+```javascript
+<script>
+    const arr = [
+        1,
+        2,
+        3,
+        3,
+    ];
+
+    const obj = {
+        name: 'willian',
+        age: 28,
+        country: 'Brasil',
+    }
+
+    function sum(a, b,) { //  não quebra a virgula a mais!
+        return a + b;
+    }
+</script>
+```
+
 
 [Voltar ao Índice](#indice)
 
