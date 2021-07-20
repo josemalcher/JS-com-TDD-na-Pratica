@@ -1129,6 +1129,19 @@ Vantagens de usar async/await
 
 52. padStart e padEnd
 
+```javascript
+<script>
+    //String.prototype.padStart/padEnd
+    // padEnd(tamanhoDesejado, textoParaAdicionar)
+
+    console.log('1'.padStart(11, '0'));
+    // 00000000001
+    console.log('1'.padEnd(11, '0'));
+    // 10000000000
+
+</script>
+```
+
 53. Exponentiation
 
 54. Array.prototype.includes
