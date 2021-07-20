@@ -1144,6 +1144,18 @@ Vantagens de usar async/await
 
 53. Exponentiation
 
+- [Secao-03-Atualizacoes-ES7-ES8/53-Exponentiation.html](Secao-03-Atualizacoes-ES7-ES8/53-Exponentiation.html)
+
+```javascript
+<script>
+  // old way
+  //console.log(Math.pow(2, 3));
+
+  console.log(2 ** 10);
+</script>
+```
+
+
 54. Array.prototype.includes
 
 55. Object.entries
