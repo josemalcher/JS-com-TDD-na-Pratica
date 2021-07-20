@@ -1047,6 +1047,59 @@ console.log(array); // (4) [1, 4, "Willian", {…}]
 
 ## <a name="parte3">3 - Seção 3: Atualizações ES7/ES8</a>
 
+49. Introdução ao Async/Await
+
+- [Secao-03-Atualizacoes-ES7-ES8/49-Introducao-ao-Async-Await.html](Secao-03-Atualizacoes-ES7-ES8/49-Introducao-ao-Async-Await.html)
+
+```js
+<body>
+<!--
+Básico
+- async/await funciona obrigatoriamente no protocolo de Promises
+- async é uma palavra chave usada no início de uma função
+- await é usado para avisar a função para esperar o resultado da Promise
+- await só pode ser usado para uma função com async
+- async/await já está funcionando em quase todos os Browsers e NodeJS
+Vantagens de usar async/await
+- O código fica mais simplificado
+- Mais fácil de debugar por ter menos callbacks
+- A conversão de uma promise para async/await é bem simples
+- O código fica com menos encadeamentos
+ -->
+<script>
+    async function getPost() {
+        const response = await fetch('https://josemalcher.net/wp-json/wp/v2/posts');
+        const data = await response.json();
+
+        return data.map(post => {
+            console.log(post.title);
+        })
+    }
+    getPost();
+    /*return fetch('https://willianjusten.com.br/search.json')
+                        .then(data => data.json())
+                        .then(data => data.map(post => {
+                            console.log(post.title);
+                        }));
+    */
+</script>
+```
+
+50. Tratando erros em async/await
+
+51. Async/Await com Multiplas Promises
+
+52. padStart e padEnd
+
+53. Exponentiation
+
+54. Array.prototype.includes
+
+55. Object.entries
+
+56. Object.values
+
+57. Trailing Commas
 
 
 [Voltar ao Índice](#indice)
