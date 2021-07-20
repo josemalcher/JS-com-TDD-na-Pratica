@@ -1175,6 +1175,35 @@ Vantagens de usar async/await
 
 55. Object.entries
 
+- [Secao-03-Atualizacoes-ES7-ES8/55-Object-entries.html](Secao-03-Atualizacoes-ES7-ES8/55-Object-entries.html)
+
+```javascript
+<script>
+    const animals = {
+        camel: 3,
+        llama: 2,
+        alpaca: 5,
+    };
+
+    const animalsMap = new Map(Object.entries(animals));
+
+    console.log(Object.keys(animals));
+    /*
+    (3) ["camel", "llama", "alpaca"]
+    0: "camel"
+    1: "llama"
+    2: "alpaca"
+    length: 3
+    __proto__: Array(0)
+    */
+
+    console.log(animalsMap.size); // 3
+    console.log(animalsMap.has('llama')); // true
+    console.log(animalsMap.has('lion')); // false
+    console.log(animalsMap.get('alpaca')); // 5
+</script>
+```
+
 56. Object.values
 
 57. Trailing Commas
