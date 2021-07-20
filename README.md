@@ -1158,6 +1158,21 @@ Vantagens de usar async/await
 
 54. Array.prototype.includes
 
+- [Secao-03-Atualizacoes-ES7-ES8/54-Array-prototype-includes.html](Secao-03-Atualizacoes-ES7-ES8/54-Array-prototype-includes.html)
+
+```javascript
+<script>
+    const arr = [1, 2, 3];
+
+    // forma antiga
+    //console.log(arr.indexOf(3) > -1);
+
+    // forma nova
+    console.log(arr.includes(3)); // true
+    console.log(arr.includes(5)); // false
+</script>
+```
+
 55. Object.entries
 
 56. Object.values
