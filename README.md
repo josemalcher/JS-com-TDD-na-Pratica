@@ -1206,6 +1206,21 @@ Vantagens de usar async/await
 
 56. Object.values
 
+-[Secao-03-Atualizacoes-ES7-ES8/56-Object-values.html](Secao-03-Atualizacoes-ES7-ES8/56-Object-values.html)
+
+```javascript
+<script>
+    const animals = {
+    camel: 3,
+    llama: 2,
+    alpaca: 13,
+};
+
+    console.log("Total of animals:", Object.values(animals).reduce((a, b) => a + b));
+    // Total of animals: 18
+</script>
+```
+
 57. Trailing Commas
 
 
